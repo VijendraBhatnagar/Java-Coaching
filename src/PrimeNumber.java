@@ -33,7 +33,7 @@ public class PrimeNumber {
 //
 //		System.out.println("14 is not a Prime number :" +isPrimeNumber(14));
 		
-		getPrimeNumber(5);
+		getPrimeNumber(15);
 		
 	}
 }

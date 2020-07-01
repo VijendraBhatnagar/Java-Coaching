@@ -18,9 +18,33 @@ public class MyClass {
 		System.out.println("Constructor with 1 parameter "+ ""+ num +""+b);
 	}
 	
+	public static void isArmstrongNumber(int num) {
+		
+		int r;
+		int t;
+		int cube=0;
+		
+		t=num;
+		
+		while(num>0) {
+			r=num%10;
+			num=num/10;
+			cube=cube+(r*r*r);
+		}
+		
+		if(t==cube) {
+			System.out.println("It's Armstrong Number");
+		}
+		else {
+			System.out.println("Not an Armstrong Number");
+		}
+		
+	}
+	
 	
 	public static void main(String [] args) {
 		
+		isArmstrongNumber(30);
 		
 		MyClass my=new MyClass(1);
 		

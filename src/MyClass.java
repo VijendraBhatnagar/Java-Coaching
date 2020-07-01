@@ -27,16 +27,16 @@ public class MyClass {
 		t=num;
 		
 		while(num>0) {
+			
 			r=num%10;
 			num=num/10;
 			cube=cube+(r*r*r);
 		}
 		
 		if(t==cube) {
-			System.out.println("It's Armstrong Number");
-		}
-		else {
-			System.out.println("Not an Armstrong Number");
+			System.out.println("Number is Armstrong");
+		}else {
+			System.out.println("Number is not Armstrong");
 		}
 		
 	}
@@ -44,7 +44,7 @@ public class MyClass {
 	
 	public static void main(String [] args) {
 		
-		isArmstrongNumber(30);
+		isArmstrongNumber(370);
 		
 		MyClass my=new MyClass(1);
 		
